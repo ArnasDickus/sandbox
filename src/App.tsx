@@ -7,8 +7,9 @@ import {
 import Home from './pages/home/home';
 import TailWind from './pages/tailwind/tailwind';
 import Header from './components/header/header';
+import './styles/output.css'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Header />
