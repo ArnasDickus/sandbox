@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Link,
+  NavLink,
 } from 'react-router-dom';
 
 const Header = () => (
@@ -30,9 +30,9 @@ const Header = () => (
             <div className="hidden sm:block sm:ml-6">
               <div className="flex space-x-4">
 
-                <Link to="/" className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</Link>
+                <NavLink to="/" activeClassName="bg-gray-900" exact className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</NavLink>
 
-                <Link to="/tail-wind" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Tailwind</Link>
+                <NavLink to="/tail-wind" activeClassName="bg-gray-900" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Tailwind</NavLink>
 
               </div>
             </div>
@@ -60,9 +60,9 @@ const Header = () => (
 
       <div className="sm:hidden" id="mobile-menu">
         <div className="px-2 pt-2 pb-3 space-y-1">
-          <Link to="/" className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</Link>
+          <NavLink to="/" exact activeClassName="bg-gray-900" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</NavLink>
 
-          <Link to="/tail-wind" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Tailwind</Link>
+          <NavLink to="/tail-wind" activeClassName="bg-gray-900" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Tailwind</NavLink>
 
         </div>
       </div>
